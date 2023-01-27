@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.pokemongame.ui.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" />
+    <fragment
+        android:id="@+id/practiceFragment"
+        android:name="com.example.pokemongame.ui.PracticeFragment"
+        android:label="fragment_practice"
+        tools:layout="@layout/fragment_practice" /><action android:id="@+id/action_global_practiceFragment" app:destination="@id/practiceFragment"/>
+</navigation>

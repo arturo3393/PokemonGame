@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PokemonGame</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_pokemon">Welcome to Pokemon</string>
+    <string name="game">Game</string>
+    <string name="my_pokemons">My Pokemons</string>
+    <string name="two_players">Two players</string>
+    <string name="play">PLAY</string>
+    <string name="practice">Practice</string>
+</resources>

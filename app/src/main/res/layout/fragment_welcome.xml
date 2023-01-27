@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_welcome"
+    tools:context=".ui.WelcomeFragment">
+
+
+    <TextView
+        android:id="@+id/tvPokemonGameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/welcome_to_pokemon"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/ivImageWelcome"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ash_welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPokemonGameTitle"
+        tools:src="@drawable/ash_welcome" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPractice"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/aclonica"
+        android:background="@drawable/btn_border_rounded"
+        android:text="@string/practice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivImageWelcome" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetPokemons"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/play"
+        android:background="@drawable/btn_border_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPractice" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTwoPlayers"
+        android:background="@drawable/btn_border_rounded"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/two_players"
+        android:fontFamily="@font/aclonica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGetPokemons" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMyPokemons"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:background="@drawable/btn_border_rounded"
+        android:layout_marginTop="12dp"
+
+        android:text="@string/my_pokemons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnTwoPlayers" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
